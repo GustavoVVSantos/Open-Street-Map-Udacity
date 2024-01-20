@@ -50,8 +50,8 @@ void RoutePlanner::AddNeighbors(RouteModel::Node *current_node) {
 
 // funtion to compare the f value of two nodes
 bool CompareFValue(RouteModel::Node *NodeA, RouteModel::Node *NodeB){
-    int FA = NodeA -> h_value + NodeA -> g_value;
-    int FB = NodeB -> h_value + NodeB -> g_value;
+    float FA = NodeA -> h_value + NodeA -> g_value;
+    float FB = NodeB -> h_value + NodeB -> g_value;
     
     return FA < FB;
 }
